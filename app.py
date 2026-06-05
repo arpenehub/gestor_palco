@@ -236,18 +236,6 @@ for _, r in cronograma.iterrows():
 
     with col1:
 
-        with st.expander(f"{status} {r['Evento']}"):
-
-            st.write(f"⏳ Atraso: {r['Atraso Acumulado']:.0f} min")
-            st.write(f"🕒 Início original: {r['Inicio Original']}")
-            st.write(f"🕒 Início atual: {r['Novo Inicio']}")
-            st.write(f"⏱ Duração original: {r['Duracao Original']} min")
-            st.write(f"⏱ Duração atual: {r['Nova Duracao']:.2f} min")
-            perda = float(r["Duracao Original"]) - float(r["Nova Duracao"])
-            st.write(f"📉 Perda: {perda:.2f} min")
-
-    with col2:
-
         st.markdown(
             f"""
             <div style="
@@ -261,6 +249,18 @@ for _, r in cronograma.iterrows():
             """,
             unsafe_allow_html=True
         )
+
+    with col2:
+
+        with st.expander(f"{status} {r['Evento']}"):
+
+            st.write(f"⏳ Atraso: {r['Atraso Acumulado']:.0f} min")
+            st.write(f"🕒 Início original: {r['Inicio Original']}")
+            st.write(f"🕒 Início atual: {r['Novo Inicio']}")
+            st.write(f"⏱ Duração original: {r['Duracao Original']} min")
+            st.write(f"⏱ Duração atual: {r['Nova Duracao']:.2f} min")
+            perda = float(r["Duracao Original"]) - float(r["Nova Duracao"])
+            st.write(f"📉 Perda: {perda:.2f} min")
 
 st.divider()
 
