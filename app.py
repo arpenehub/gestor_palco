@@ -21,21 +21,21 @@ CRONOGRAMAS = {
         ("Lado Blue", "20:00", 50),
         ("Djs Alien e Azzi", "20:50", 40),
         ("Isis da Mata", "21:30", 60),
-        ("Manifesto", "22:30", 5),
-        ("Uva de Moc", "22:35", 10),
-        ("Desfile Lukah", "22:45", 15),
-        ("Dj Breno", "23:00", 60),
+        ("Manifesto", "22:30", 10),
+        ("Uva de Moc", "22:40", 10),
+        ("Desfile Lukah", "22:50", 15),
+        ("Dj Breno", "23:05", 60),
     ],
 
+
     "Sabado": [
-        ("DJ Rudah", "20:00", 20),
-        ("Nands e Allysson", "20:20", 15),
-        ("Pocket Show Jade", "20:35", 25),
+        ("DJ Rudah", "20:00", 60),
         ("Sebá", "21:00", 60),
-        ("Manifesto", "22:00", 10),
-        ("Desfile Lukah", "22:10", 15),
-        ("Dj Breno", "22:25", 60),
+        ("Manifesto", "22:00", 15),
+        ("Desfile Eloya", "22:15", 30),
+        ("Tarja negra", "22:45", 60),
     ]
+
 }
 
 # ==========================================================
